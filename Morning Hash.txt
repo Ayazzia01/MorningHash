@@ -38,7 +38,7 @@ Presenting you the-
 *JAVA -* Arrays. sort(array); //import java.util.Arrays;
 
 *C++ -*  int n = sizeof(arr) / sizeof(arr[0]); 
-    	      /*Here we take two parameters, the beginning of the array and the length n upto which we want the array to be sorted*/
+    	      //Here we take two parameters, the beginning of the array and the length n upto which we want the array to be sorted.
 	      sort(arr, arr + n);
 
 *Python -* list.sort(key=..., reverse=...)
