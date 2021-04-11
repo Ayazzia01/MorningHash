@@ -1,0 +1,73 @@
+"What is Object Oriented Programming (OOP) ?*
+OOP relies on the usage of *_classes_* and *_methods_*.
+A class is like a blueprint for an object.
+These classes often represent broad categories like a Dog or a Car (which share _attributes_).
+Classes contain functions, called methods available only to objects of that type.
+//A car can have *repaint* as a _method_.
+These methods are defined within the class and perform action related to the object type.
+
+*Optimised Code for checking whether a number is Prime*
+//_Mathematically, it can be proven that a composite number has a factor between 1 and square root of the number._
+_Meaning- 16 has factors- 2,4 and 8 (exclusive)._
+_Now, square root of 16 is 4 and to be a composite number, there must exist a factor between 1 and 4, i.e., 2._
+_Therefore, 16 is composite._
+static boolean isPrime(int n)
+    {
+        // Check if number is less than
+        // equal to 1
+        if (n <= 1)
+            return false;
+        // Check if number is 2
+        else if (n == 2)
+            return true;
+        // Check if n is a multiple of 2
+        else if (n % 2 == 0)
+            return false;
+        for (int i = 3; i <= Math.sqrt(n); i += 2)
+        {
+            if (n % i == 0)
+                return false;
+        }
+        return true;
+    }
+
+*Tired of Sorting arrays in O(n^2)?*
+Use the inbuilt _sort_ function in your programming language today.
+Presenting you the-
+
+*JAVA -* Arrays. sort(array); //import java.util.Arrays;
+
+*C++ -*  int n = sizeof(arr) / sizeof(arr[0]); 
+    	      /*Here we take two parameters, the beginning of the array and the length n upto which we want the array to be sorted*/
+	      sort(arr, arr + n);
+
+*Python -* list.sort(key=..., reverse=...)
+Alternatively, you can also use Python's built-in sorted() function for the same purpose.
+sorted(list, key=..., reverse=...)
+Note: The simplest difference between sort() and sorted() is: sort() changes the list directly and doesn't return any value, while sorted() doesn't change the list and returns the sorted list.
+
+*Why JAVA isn't purely OOP?*
+1) Primitive Data Type ex. int, long, bool, float, char, etc as Objects:
+In Java, we have predefined types as non-objects (primitive types). A purely object oriented language should have all pre-defined types as objects.
+int a = 5; 
+System.out.print(a);
+2) The static keyword:  When we declare a class as static then it can be used without the use of an object in Java. If we are using the static function or static variable then we can’t call that function or variable by using dot(.) or class object defying object-oriented feature.
+All operations performed on objects must be only through methods exposed at the objects.
+
+*What will be the output of the following program?*
+int a=(byte)+(char)-(int)+(long)-1;
+System.out.println(a);
+Through type casting, firstly _(long)-1_ becomes -1
+then the -1 which is of _long_ gets converted to _int_ and changes to positive because of negative sign.
+Now the code is: int a= (byte)+(char)+1;
+character 1 is one; which at last is converted to _byte_.
+Now the data type of _a_ is _int_, therefore _byte_ again gets implicitly converted to _int_.
+And the output is 1.
+
+*Are your tired of remembering the range of data types?*
+Don't worry we have got you covered.
+Use the inbuilt .MIN_VALUE and .MAX_VALUE functions in JAVA.
+Integer.MIN_VALUE - Returns the lowest number in _int_ data type, i.e. -2^31.
+Integer.MAX_VALUE - Returns the highest number in _int_ data type, i.e. 2^31-1.
+//You'd have to use wrapper class- Byte, Short, Integer, Long, Float, Double, Character.
+Boolean class throws an error.
