@@ -1,0 +1,25 @@
+*Tired of creating buttons in CSS the old way?*
+
+Try the website -   _https://css3buttongenerator.com/_
+Get instant css code for customized button.
+
+*Are you doing Competitive Programming and want your JAVA code to run faster?*
+Instead of switching to the terminal in each loop to print-
+for(int i=1;i<5;i++){
+System.out.println("Print");}
+
+Try using JAVA's inbuilt _StringBuffer_ class to print instead-
+StringBuffer sb=new StringBuffer();
+for(int i=1;i<5;i++){
+sb.append("Print \n");}
+System.out.println(sb);
+
+*Don't want to write long lines of code for _BinarySearch_?*
+Take advantage of JAVA's inbuilt Arrays.binarySearch(int [ ], int).
+
+int intArr[] = { 10, 20, 15, 22, 35 };
+Arrays.sort(intArr);
+int intKey = 22;
+System.out.println(intKey + " found at index = " + Arrays.binarySearch(intArr, intKey));
+
+_// Output - 22 found at index = 3
