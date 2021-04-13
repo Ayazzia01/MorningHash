@@ -22,4 +22,4 @@ Arrays.sort(intArr);
 int intKey = 22;
 System.out.println(intKey + " found at index = " + Arrays.binarySearch(intArr, intKey));
 
-_// Output - 22 found at index = 3
+_// Output - 22 found at index = 3_
